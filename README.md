@@ -15,5 +15,10 @@ I also wrote a notebook for the whole model comparison/selection and visualisati
 
 # Files Description
 
-- model_comparison.ipynb : interactive notebook for the whole model comparison/selection and visualisation process.
-- model_
+- infer_bert_transformers.ipynb : inference part of a NN approach with transformers (using Pytorch and a BERT model from the Transformers library)
+- infer_log_reg_tf_idf_baseline.ipynb : inference part of a tf-idf method with a logistic regression
+- infer_nn_embd_lstms.ipynb : inference part of a NN approach with embedding ans LSTMs (using Tensorflow)
+- model_comparison.ipynb : interactive notebook for the whole model comparison/selection and visualisation process
+- train_bert_transformers.ipynb : training part of a NN approach with transformers (using Pytorch and a BERT model from the Transformers library)
+- train_log_reg_tf_idf_baseline.ipynb : training part of a tf-idf method with a logistic regression
+- train_nn_embd_lstms.ipynb : training part of a NN approach with embedding ans LSTMs (using Tensorflow)
