@@ -5,3 +5,5 @@ The goal is to create a sentiment analysis model, able to predict if a tweet is 
 The notebooks folder contains all the code used for data preprocessing, model selection and model training.
 
 The application code contains the code used to build a python web application.
+
+You will find README.md files in both folders for more info.
