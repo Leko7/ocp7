@@ -40,11 +40,6 @@ def lemmatizer_on_text(data,lm):
     text = [lm.lemmatize(word) for word in data]
     return data
 
-def analyze_sentiment(text):
-    # Your sentiment analysis model logic here
-    # Return a dummy response for demonstration
-    return "Positive" if "good" in text else "Negative"
-
 def analyze_sentiment_baseline(text):
 
     # Load vectorizer
@@ -113,14 +108,12 @@ def analyze_sentiment_baseline(text):
 
     return sentiment
 
-def dummy(text):
-    return "Positive" if "good" in text else "Negative"
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
     data = request.get_json()
     text = data['text']
-    sentiment = analyze_sentiment(text)
+    sentiment = analyze_sentiment_baseline(text)
     return jsonify({'sentiment': sentiment})
 
 if __name__ == '__main__':
